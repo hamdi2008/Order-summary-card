@@ -1,0 +1,116 @@
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    :root {
+        --Pale-blue: hsl(225, 100%, 94%);
+        --Bright-blue: hsl(245, 75%, 52%);
+        --Very-pale-blue: hsl(225, 100%, 98%);
+        --Desaturated-blue: hsl(224, 23%, 55%);
+        --Dark-blue: hsl(223, 47%, 23%);
+    
+    }
+    body{
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 1rem; 
+        background-color: var(--Pale-blue);
+        color: var(--Desaturated-blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2em;
+    }
+    img{
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    button{
+        background-color: var(--Bright-blue);
+        color: var(--Pale-blue);
+        border: none;
+        padding: .5em 1em;
+        width: 250px;
+        border-radius: 10px;
+        margin: 1em;
+        cursor: pointer;
+    }
+    button:hover,
+    button:focus{
+        background-color: #333;
+    }
+    h1,
+    .large-text{
+        padding: .5em;
+    }
+    h1{
+        color: var(--Dark-blue);
+        font-weight: bold;
+        
+    }
+    .large-text{
+        padding: .5em 1em;
+        line-height: 1.5;
+    }
+    .container{
+        background-color: #fff;
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .plan-info{
+        background-color: var(--Very-pale-blue);
+        display: flex;
+        margin: 1em;
+        padding: 1em;
+        gap: 1em;
+        border-radius: 10px;
+    }
+    .plan-info p{
+        color: var(--Dark-blue);
+        font-weight: bold;
+        font-size: .8rem;
+        margin-bottom: .5em;
+    }
+    .plan-info span{
+        color: var(--Desaturated-blue);
+        font-weight: normal;
+        display: block;
+        
+    }
+    .plan-info a{
+        color: var(--Bright-blue);
+        font-size: .8rem;
+        font-weight: bold;
+        margin-left: 3em;
+        margin-top: .5em;
+       
+    }
+    .small-text{
+        margin: 1em;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+    footer{
+        margin: 1em 0;
+        color: #000;
+        
+    }
+    footer p {
+        margin: .5em 0;
+    }
+    footer a{
+        color: var(--Bright-blue);
+    }
+    footer a:hover,
+    footer a:focus{
+        text-decoration: underline;
+        color: inherit;
+    }
+    
